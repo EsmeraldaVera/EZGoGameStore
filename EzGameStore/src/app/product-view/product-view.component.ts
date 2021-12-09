@@ -1,5 +1,4 @@
-import { Component, NgModule, OnInit } from '@angular/core';
-import { NgModel } from '@angular/forms';
+import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
@@ -8,7 +7,7 @@ import {ActivatedRoute, Router} from '@angular/router';
   styleUrls: ['./product-view.component.scss']
 })
 export class ProductViewComponent implements OnInit {
-  products: any;
+  products: any = {};
   constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {

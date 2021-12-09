@@ -1,4 +1,20 @@
-<div class=" card card-body">
-    <div *ngFor="let product of products">
-    </div>
-</div>
+<table class="table" *ngIf="products.length!==0">
+    <thead>
+        <tr>
+            <td>Name</td>
+            <td>Price</td>
+            <td>Description</td>
+            <td>Review</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td><a [routerLink]="['view',product.id]">{{product.name}}</a></td>
+            <td>{{product.price|currency:'USD'}}></td>
+            <td>{{product.description}}</td>
+            <td>{{product.review</td>
+        </tr>
+    </tbody>>
+</table>
+
+<router-outlet></router-outlet>
