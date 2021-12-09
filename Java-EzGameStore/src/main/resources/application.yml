@@ -9,6 +9,11 @@ spring:
   jpa:
     show-sql: true
 
+    springdoc:
+      swagger-ui:
+        path=/swagger-ui.html
+
 com:
   revature:
     training: true
+
