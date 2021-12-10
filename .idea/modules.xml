@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/EZGoGameStore.iml" filepath="$PROJECT_DIR$/.idea/EZGoGameStore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" filepath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" />
     </modules>
   </component>
 </project>
