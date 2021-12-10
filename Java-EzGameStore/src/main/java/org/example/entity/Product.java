@@ -1,6 +1,5 @@
 package org.example.entity;
 
-<<<<<<< HEAD
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import lombok.AllArgsConstructor;
@@ -29,7 +28,4 @@ public class Product {
     @Transient
     @OneToMany(mappedBy="product",cascade=CascadeType.REMOVE)
     private List<RedirectView> reviews;
-=======
-public class Product {
->>>>>>> e56058d41d48db36e3ea93439edb61e1e2f9a6aa
 }

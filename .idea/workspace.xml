@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed some errors">
-      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/app.module.ts" afterDir="false" />
+    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="New Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/repository/ProductRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="main" />
+    <option name="BRANCH" value="Main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../revature-java-fullstack/code" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,14 +62,7 @@
       <option name="project" value="LOCAL" />
       <updated>1639008732034</updated>
     </task>
-    <task id="LOCAL-00004" summary="Fixed some errors">
-      <created>1639101888983</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1639101888983</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,7 +80,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
     <MESSAGE value="New Commit" />
-    <MESSAGE value="Fixed some errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed some errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Commit" />
   </component>
 </project>
