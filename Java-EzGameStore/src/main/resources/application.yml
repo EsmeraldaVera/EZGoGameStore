@@ -5,6 +5,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/EZ_DataBase
     username: root
+<<<<<<< HEAD
     password: Blueisthebestcolor27!
   jpa:
     show-sql: true
@@ -17,3 +18,12 @@ com:
   revature:
     training: true
 
+=======
+    password:
+  jpa:
+    show-sql: true
+
+com:
+  revature:
+    training: true
+>>>>>>> e56058d41d48db36e3ea93439edb61e1e2f9a6aa
