@@ -13,7 +13,7 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routes:Routes= [
   {
-    path: 'list', resolve: {products: ProductResolver}
+    path: 'list', component:ProductListComponent
   }
 ]
 @NgModule({

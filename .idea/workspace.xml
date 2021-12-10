@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed some errors" />
+    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed some errors">
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/app.module.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
