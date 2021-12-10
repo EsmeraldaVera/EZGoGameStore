@@ -10,6 +10,7 @@ import {ProductViewComponent} from './product-view/product-view.component';
 import {LoginComponent } from './login/login.component';
 import {ProductResolver} from './product.resolver';
 import {RouterModule, Routes} from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes:Routes= [
   {
@@ -22,6 +23,7 @@ const routes:Routes= [
     LoginComponent,
     ProductViewComponent,
     ProductListComponent,
+    NavbarComponent,
 
 
 
