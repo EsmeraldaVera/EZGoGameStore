@@ -10,10 +10,7 @@ import {ProductViewComponent} from './product-view/product-view.component';
 import {LoginComponent } from './login/login.component';
 import {ProductResolver} from './product.resolver';
 import {RouterModule, Routes} from '@angular/router';
-<<<<<<< HEAD
 import { NavbarComponent } from './navbar/navbar.component';
-=======
->>>>>>> 5471d3422c3825ce642ba70e96041f8fbbde379e
 
 const routes:Routes= [
   {
@@ -26,10 +23,7 @@ const routes:Routes= [
     LoginComponent,
     ProductViewComponent,
     ProductListComponent,
-<<<<<<< HEAD
     NavbarComponent,
-=======
->>>>>>> 5471d3422c3825ce642ba70e96041f8fbbde379e
 
 
 
