@@ -99,5 +99,10 @@
             }
         }
     },
+    "schematics": {
+      "@schemtatics/angular:component": {
+        "styleext": "scss"
+      }
+    },
     "defaultProject": "EzGameStore"
 }

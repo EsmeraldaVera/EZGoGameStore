@@ -1,7 +1,21 @@
-<nav class="nav nav-pills nav-fill">
-    <a routerLink="/Login" class="nav-link active" href>Login</a>
-    <a routerLink="Home" class="nav-link" href>Home</a>
-    <a routerLink="/View-Products" class="nav-link" href>Products</a>
+<nav class="navbar navbar-light bg-info">
+    <div class="container-fluid">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link" href>
+                    Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/list">
+                    Products
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href>
+                    Cart
+                </a>
+            </li>
+        </ul>
+    </div>
 </nav>
-
-<router-outlet></router-outlet>

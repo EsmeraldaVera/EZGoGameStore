@@ -1,8 +1,9 @@
-<div style="background-color: black;">
-    <div class="container" style="background-color: bisque;">
-        <div style="margin-top: 100px;">
-            <app-navbar></app-navbar>
-        </div>
+<app-header></app-header>
+<div class="container" style="background-color: bisque;">
+    <div style="margin-top: 50px;">
+        <app-navbar></app-navbar>
     </div>
+
+    <app-login></app-login>
+    <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>

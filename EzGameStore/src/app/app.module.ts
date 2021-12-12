@@ -3,30 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
 
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductViewComponent } from './product-view/product-view.component';
-import { LoginComponent } from './login/login.component';
-import { ProductResolver } from './product.resolver';
-import { RouterModule, Routes } from '@angular/router';
+import {ProductListComponent} from './product-list/product-list.component';
+import {ProductViewComponent} from './product-view/product-view.component';
+import {LoginComponent } from './login/login.component';
+import {ProductResolver} from './product.resolver';
+import {RouterModule, Routes} from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
-const routes: Routes = [
+const routes:Routes= [
   {
-    path: 'Home',
-    component: HomeComponent,
-    resolve: {},
-    canActivate: [],
-    canActivateChild: [],
-    canDeactivate: []
-  },
-  {
-    path: 'View-Products', component: ProductListComponent
-  },
-  {
-    path: 'Login', component: LoginComponent
+    path: 'list', component:ProductListComponent
   }
 ]
 @NgModule({
@@ -36,7 +25,7 @@ const routes: Routes = [
     ProductViewComponent,
     ProductListComponent,
     NavbarComponent,
-    HomeComponent
+    HeaderComponent,
 
 
 
