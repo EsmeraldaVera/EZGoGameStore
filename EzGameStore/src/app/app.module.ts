@@ -11,6 +11,7 @@ import {LoginComponent } from './login/login.component';
 import {ProductResolver} from './product.resolver';
 import {RouterModule, Routes} from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes:Routes= [
   {
@@ -24,6 +25,7 @@ const routes:Routes= [
     ProductViewComponent,
     ProductListComponent,
     NavbarComponent,
+    HeaderComponent,
 
 
 
