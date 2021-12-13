@@ -15,6 +15,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 
+@Service
 public class UserServiceImpl implements UserService, UserDetailsService {
 
     @Autowired
