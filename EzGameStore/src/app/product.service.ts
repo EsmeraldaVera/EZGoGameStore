@@ -13,8 +13,17 @@ export class ProductService {
     return this.httpClient.get(this.apiUrl);
   }
 
-  getProducts(productId: number) {
-    return this.httpClient.get(this.apiUrl + "/" + productId);
+  getProduct(productId: number) {
+    return this.httpClient.get(`${this.apiUrl}/${productId}`);
+  }
+  deleteProduct(productId: number) {
+    return this.httpClient.delete(`${this.apiUrl}/${productId}`)
+  }
+  saveProduct(product:any){
+    return this.httpClient.post(this.apiUrl, product)
+  }
+  updateProduct(productId: number, product:any) {
+    return this.httpClient.put(`${this.apiUrl}/${productId}`, product)
   }
 
   getReviews(productId: number) {
