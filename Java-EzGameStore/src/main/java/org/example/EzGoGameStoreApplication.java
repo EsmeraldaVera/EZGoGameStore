@@ -32,8 +32,9 @@ public class EzGoGameStoreApplication {
         userService.register(user2);
 
     }
-
     public static void main(String[] args) {
-        SpringApplication.run(EzGoGameStoreApplication .class, args);
+        SpringApplication.run(EzGoGameStoreApplication.class, args);
     }
+
+
 }

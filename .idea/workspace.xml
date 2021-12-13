@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Merged with Samus">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed META-INF ERROR, need tables set up to run program">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_6_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/EzGoGameStoreApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/entity/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/repository/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/web/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/EzGoGameStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/EzGoGameStoreApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/config/WebSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/config/WebSecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ResourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ResourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/resources/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/META-INF/spring.factories" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/web/ResourceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/web/ResourceController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,12 +29,16 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -62,6 +61,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\brady\store\EZGoGameStore\EzGameStore\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brady\store\EZGoGameStore\Java-EzGameStore" />
+      <recent name="C:\Users\brady\store\EZGoGameStore\Java-EzGameStore\src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.EzGoGameStoreApplication">
@@ -149,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639414197362</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated Pom.xml to include security framework.">
+      <created>1639414713018</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1639414713018</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +182,9 @@
     <MESSAGE value="New Commit" />
     <MESSAGE value="Commit before merging branch" />
     <MESSAGE value="Merged with Samus" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merged with Samus" />
+    <MESSAGE value="Updated Pom.xml to include security framework." />
+    <MESSAGE value="Fixed META-INF ERROR, need tables set up to run program" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed META-INF ERROR, need tables set up to run program" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -184,5 +196,10 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EZGoGameStore$EzGoGameStoreApplication.ic" NAME="EzGoGameStoreApplication Coverage Results" MODIFIED="1639417992760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>
