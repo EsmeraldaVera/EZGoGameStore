@@ -1,7 +1,7 @@
 package org.example.web;
 
 
-}import org.example.entity.Product;
+import org.example.entity.Product;
 import org.example.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -44,11 +44,32 @@ public class ProductController {
 
     @PostMapping(
             value = "/api/products",
-            consumes = {"application/json", "application/xml"}
+            consumes = {"application/json"}
     )
     public ResponseEntity<?> createProduct(@Valid @RequestBody Product product) {
         product = productRepository.save(product);
         return ResponseEntity.status(HttpStatus.CREATED).body(product);
 
     }
+    @PutMapping(
+            value = "/api/products/{productId}"
+    )
+    public ResponseEntity<?> updateProduct(@PathVariable(name = "productId") int productId,
+            @RequestBody Product product
+    ) {
+        product.setId(productId);
+        product = productRepository.save(product);
+        return ResponseEntity.ok(product);
+    }
+
+    @DeleteMapping(
+
+            value = "/api/products/{productId}"
+    )
+    public ResponseEntity<?> deleteProduct(@PathVariable(name = "productId") int productId) {
+        productRepository.deleteById(productId);
+        return ResponseEntity.ok().build();
+    }
+
+
 }

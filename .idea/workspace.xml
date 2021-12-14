@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed Pom.xml error again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
