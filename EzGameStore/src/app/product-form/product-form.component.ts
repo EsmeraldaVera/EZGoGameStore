@@ -36,19 +36,19 @@ export class ProductFormComponent implements OnInit {
     if (this.isEditMode){
       this.productService.updateProduct(this.product.id, productFormModel)
       .subscribe(response =>{
-        this.router.navigate(["/list"])
+        this.router.navigate(["add-delete-product"])
       });
     }else
     this.productService.saveProduct(productFormModel)
     .subscribe(response =>{
-      this.router.navigate(["/list"])
+      this.router.navigate(["add-delete-product"])
     });
   }
  cancel=false;
 
  doCancel() {
    this.cancel=true;
-   this.router.navigate(['list'])
+   this.router.navigate(['add-delete-product'])
  }
 
 }

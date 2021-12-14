@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed Pom.xml error again">
+    <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="able to add, delete, update, create products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/navbar/navbar.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/navbar/navbar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/navbar/navbar.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/product-form/product-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/product-form/product-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/product-form/product-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/product-form/product-form.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EzGameStore/src/app/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/EzGameStore/src/app/product-list/product-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639440857979</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="able to add, delete, update, create products">
+      <created>1639444732334</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1639444732334</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +220,8 @@
     <MESSAGE value="Updated Pom.xml to include security framework." />
     <MESSAGE value="Fixed META-INF ERROR, need tables set up to run program" />
     <MESSAGE value="Fixed Pom.xml error again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Pom.xml error again" />
+    <MESSAGE value="able to add, delete, update, create products" />
+    <option name="LAST_COMMIT_MESSAGE" value="able to add, delete, update, create products" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EZGoGameStore$EzGoGameStoreApplication.ic" NAME="EzGoGameStoreApplication Coverage Results" MODIFIED="1639417992760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

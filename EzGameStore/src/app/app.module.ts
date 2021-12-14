@@ -14,6 +14,7 @@ import {RouterModule, Routes} from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductFormComponent } from './product-form/product-form.component';
+import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
 const routes:Routes= [
   {
     path: 'add-delete-product', component: ProductFormComponent
@@ -48,7 +49,8 @@ const routes:Routes= [
     ProductListComponent,
     NavbarComponent,
     HeaderComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    CheckoutFormComponent
 
 
 
