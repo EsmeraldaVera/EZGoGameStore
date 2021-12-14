@@ -7,23 +7,7 @@
     <list default="true" id="585c11c3-d894-4ba0-b0ed-3a039c121f8a" name="Changes" comment="Fixed Pom.xml error again">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/Java-EzGameStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/EzGoGameStoreApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/EzGoGameStoreApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/repository/ProductRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Java-EzGameStore/src/main/java/org/example/web/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/Utils/JwtUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/auth/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/auth/AuthRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/auth/AuthResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/auth/JwtRequestFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/config/WebSecurityConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/service/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java-EzGameStore/target/classes/org/example/web/ResourceController.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639414713018</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed Pom.xml error again">
+      <created>1639440857979</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639440857979</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
