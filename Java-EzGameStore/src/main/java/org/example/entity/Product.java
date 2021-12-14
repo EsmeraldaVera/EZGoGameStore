@@ -1,4 +1,4 @@
-package org.example.entity;
+package org.example.gitchange;
 
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;

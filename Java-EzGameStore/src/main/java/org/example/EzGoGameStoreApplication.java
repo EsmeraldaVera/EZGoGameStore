@@ -1,7 +1,6 @@
-package org.example;
+package org.example.gitchange;
 
 import org.example.entity.User;
-import org.example.repository.UserRepository;
 import org.example.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;

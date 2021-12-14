@@ -1,8 +1,6 @@
-package org.example.web;
+package org.example.gitchange;
 
 
-import org.example.entity.Product;
-import org.example.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

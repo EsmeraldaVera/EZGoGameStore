@@ -1,6 +1,5 @@
-package org.example.repository;
+package org.example.gitchange;
 
-import org.example.entity.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 
