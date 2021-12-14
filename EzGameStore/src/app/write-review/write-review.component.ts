@@ -30,9 +30,9 @@ export class WriteReviewComponent implements OnInit {
   handleSubmit(event: Event, reviewFormGroup: NgForm) {
     const reviewFormModel = reviewFormGroup.value
     this.productService.saveReview(reviewFormModel)
-    //.subscribe(response => {
-    // this.router.navigate(["/review"])
-    //});
+      .subscribe(response => {
+        this.router.navigate(["/review"])
+      });
   }
 
 }

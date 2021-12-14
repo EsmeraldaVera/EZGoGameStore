@@ -20,6 +20,7 @@ public class User {
     @Column(unique = true)
     private String password;
     private String username;
+    @Transient
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "user_roles",foreignKey = @ForeignKey(name="user_id"))
     private List<String> authorities;

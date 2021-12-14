@@ -15,7 +15,7 @@ public class EzGoGameStoreApplication {
     @Autowired
     private UserService userService;
 
-    @PostConstruct
+    /*@PostConstruct
     public void registerUsers(){
         User user1=new User();
         user1.setPassword("123");
@@ -32,6 +32,8 @@ public class EzGoGameStoreApplication {
         userService.register(user2);
 
     }
+    
+     */
     public static void main(String[] args) {
         SpringApplication.run(EzGoGameStoreApplication.class, args);
     }
