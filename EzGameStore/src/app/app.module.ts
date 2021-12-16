@@ -3,7 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { AuthGuard } from './auth.guard';
+import { JwtInterceptor } from './jwt.interceptor';
 
 import {ProductListComponent} from './product-list/product-list.component';
 import {ProductViewComponent} from './product-view/product-view.component';
@@ -19,6 +21,9 @@ const routes:Routes= [
   {path: 'add-delete-product', component: ProductFormComponent
   },
   {path: 'checkout', component: CheckoutFormComponent},
+  { path: '', pathMatch: "full", redirectTo: 'login' },
+  {path: 'list', component:ProductListComponent},
+  { path: 'login-form', component: LoginComponent },
   {
     path: 'list', resolve: {
       products: ProductsResolver
@@ -52,10 +57,6 @@ const routes:Routes= [
     ProductFormComponent,
     CheckoutFormComponent
   
-  
-
-
-
   ],
   imports: [
     BrowserModule,
@@ -64,7 +65,9 @@ const routes:Routes= [
     HttpClientModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
