@@ -6,13 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  imageMap: any[];
 
 
-  constructor() { 
-    this.imageMap= [ 
-      "./assets/Logo1500px.png 720w"
-    ];
+  constructor() {
+
   }
 
     ngOnInit(): void {

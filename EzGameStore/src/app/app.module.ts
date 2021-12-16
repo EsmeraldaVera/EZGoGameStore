@@ -16,9 +16,9 @@ import { HeaderComponent } from './header/header.component';
 import { ProductFormComponent } from './product-form/product-form.component';
 import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
 const routes:Routes= [
-  {
-    path: 'add-delete-product', component: ProductFormComponent
+  {path: 'add-delete-product', component: ProductFormComponent
   },
+  {path: 'checkout', component: CheckoutFormComponent},
   {
     path: 'list', resolve: {
       products: ProductsResolver
@@ -51,6 +51,8 @@ const routes:Routes= [
     HeaderComponent,
     ProductFormComponent,
     CheckoutFormComponent
+  
+  
 
 
 
