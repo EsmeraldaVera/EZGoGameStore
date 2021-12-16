@@ -2,6 +2,9 @@ import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import {User} from '../user';
 import { LoginUserService } from '../login-user.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -10,20 +13,32 @@ import { LoginUserService } from '../login-user.service';
 })
 export class LoginComponent implements OnInit {
 
-  user: User = new User();
+  message: string = "";
 
+  loginForm: FormGroup = this.fb.group({
+    username: [''],
+    password: ['']
+  });
 
-
-  constructor(private LoginUserService:LoginUserService) {}
-
-  ngOnInit(): void {
+  handleSubmit(event: Event) {
+    let credentials = this.loginForm.value;
+    this.userService.doLogin(credentials)
   }
 
-  handleLogin(){
-    console.log(this.user)
-    this.LoginUserService.handleLogin(this.user).subscribe(data=>{
-      alert('Login Successful')
-    }, error => alert(`Invalid Password and Username Combo`))
+  constructor(private fb: FormBuilder, private router: Router, private userService: LoginUserService) { }
+
+  ngOnInit(): void {
+    this.userService.userStream
+      .subscribe({
+        next: (e: any) => {
+          if (e.action === "LOGIN_SUCCESS")
+            this.router.navigate(["/products"])
+          if (e.action === "LOGIN_FAILED") {
+            console.log(e);
+            this.message = "Login failed"
+          }
+        }
+      })
   }
 
 }

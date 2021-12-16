@@ -35,11 +35,11 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         User user=userRepository.findByUsername(username);
         if(user==null)throw  new UsernameNotFoundException(username);
 
-        ArrayList<GrantedAuthority> grantedAuthorities=new ArrayList<>();
-        for(String authority:user.getAuthorities()){
-            grantedAuthorities.add(new SimpleGrantedAuthority(authority));
-        }
-        UserDetails userDetails=new org.springframework.security.core.userdetails.User(user.getUsername(),user.getPassword(),grantedAuthorities);
+//        ArrayList<GrantedAuthority> grantedAuthorities=new ArrayList<>();
+//        for(String authority:user.getAuthorities()){
+//            grantedAuthorities.add(new SimpleGrantedAuthority(authority));
+//        }
+        UserDetails userDetails=new org.springframework.security.core.userdetails.User(user.getUsername(),user.getPassword(), new ArrayList<>());
         return userDetails;
     }
 }
