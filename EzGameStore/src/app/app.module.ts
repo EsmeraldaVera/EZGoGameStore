@@ -14,7 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { WriteReviewComponent } from './write-review/write-review.component';
-import {CheckoutFormComponent} from "./checkout-form/checkout-form.component"
+import { CheckoutFormComponent } from "./checkout-form/checkout-form.component"
 
 
 const routes: Routes = [
