@@ -11,7 +11,7 @@ import {ProductListComponent} from './product-list/product-list.component';
 import {ProductViewComponent} from './product-view/product-view.component';
 import {LoginComponent } from './login/login.component';
 import {ProductResolver} from './product.resolver';
-import {ProductsResolver} from './products.resolver';
+import { ProductsResolver } from './products.resolver';
 import {RouterModule, Routes} from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
