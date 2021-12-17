@@ -1,28 +1,25 @@
-<nav class="navbar navbar-light nav nav-pills nav-fill bg-info">
-    <div class="container-fluid">
+<nav class="nav nav-pills nav-fill">
+    <div class="container-fluid" id="navbar">
         <ul class="nav">
             <li class="nav-item">
-                <a routerLink="/Home" class="nav-link" routerLinkActive="active">Home</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" routerLinkActive="active" routerLink="/list">
-          Games
-        </a>
+                    Games
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href>
-          Cart
-        </a>
+                <a class="nav-link" routerLink="checkout" routerLinkActive="active">
+                    Cart
+                </a>
             </li>
             <li class="nav-item">
-                <a routerLink="Login" class="nav-link" routerLinkActive="active">Login</a>
+                <a routerLink="login-form" class="nav-link" routerLinkActive="active">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLinkActive="active" routerLink="/add-delete-product">
-          Employee
-        </a>
+                    Employee
+                </a>
             </li>
-            
+
         </ul>
     </div>
 </nav>
