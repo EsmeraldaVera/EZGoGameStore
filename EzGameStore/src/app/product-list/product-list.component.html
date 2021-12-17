@@ -1,0 +1,34 @@
+<div class="list-group-item" *ngFor="let product of products">
+    <div class="row">
+        <div class="col-3">
+            <img class="img-fluid" alt="image description" [src]="product.image_path" />
+        </div>
+        <div class="col-9">
+            <div>{{product.name}}</div>
+            <div>{{product.price}}</div>
+
+            <button (click) = "handleCart(product.name,product.price)"
+            class="btn btn light btn-primary"> Add To Cart </button>
+
+            <button (click) = "handleCart(product.name,product.price)" 
+            class="btn btn light btn-primary">Remove</button>
+
+            <button (click) = "handleCart(product.name,product.price)"
+             class="btn btn light btn-primary">Buy</button>
+             
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a></a>
+                </li>
+                <li class="nav-item">
+                    <a></a>
+                </li>
+            </ul>
+            <div>{{product.description}}</div>
+            <div>{{product.review}}</div>
+        </div>
+    </div>
+
+</div>
+
+<router-outlet></router-outlet>
