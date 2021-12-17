@@ -8,10 +8,10 @@ import {CheckoutService} from '../checkout.service'
   styleUrls: ['./checkout-form.component.scss']
 })
 export class CheckoutFormComponent implements OnInit {
- creditCard: any = {
+ account: any = {
     card_holder: '',
     type:'', 
-    accountNumber: '',
+    account_number: '',
     expiration_date: '',
     cvc:'', 
     address: ''
@@ -23,26 +23,29 @@ export class CheckoutFormComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.data.subscribe((data:any)=>{
-      if(data.creditCard){
-      this.creditCard=data.creditCard;
+      if(data.account){
+      this.account=data.account;
       this.isEditMode = true;
       }
     });
   }
 
- handleSubmit(event: Event, creditCardFormGroup: NgForm){
-    const creditCardFormModel=creditCardFormGroup.value
-    /*if (this.isEditMode){
-      this.checkoutService.updateCreditCard(creditCardFormModel)
+ handleSubmit(event: Event, accountFormGroup: NgForm){
+  
+  
+    const accountFormModel=accountFormGroup.value
+  if (this.isEditMode){
+      this.checkoutService.updateAccount(accountFormModel)
       .subscribe(response =>{
         this.router.navigate(["app-checkout-form"])
       });
     }else
-    this.checkoutService.saveCreditCard(creditCardFormModel)
+    this.checkoutService.saveAccount(accountFormModel)
     .subscribe(response =>{
       this.router.navigate(["app-checkout-form"])
-    });*/
+    });
   }
+
  cancel=false;
 
  doCancel() {

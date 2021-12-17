@@ -3,7 +3,12 @@
     <div style="margin-top: 50px;">
         <app-navbar></app-navbar>
     </div>
+    <ng-container *ngIf="isLoggedIn">
+        <li class="nav-item">
+            <a class="nav-link" (click)="handleLogout()" style="cursor: pointer;">Logout</a>
+        </li>
+    </ng-container>
+
+
     <router-outlet></router-outlet>
 </div>
-
-<app-checkout-form></app-checkout-form>

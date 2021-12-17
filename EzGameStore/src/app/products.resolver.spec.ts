@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { CheckoutResolver } from './checkout.resolver';
+import { ProductsResolver } from './products.resolver';
 
-describe('CheckoutResolver', () => {
-  let resolver: CheckoutResolver;
+describe('ProductsResolver', () => {
+  let resolver: ProductsResolver;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    resolver = TestBed.inject(CheckoutResolver);
+    resolver = TestBed.inject(ProductsResolver);
   });
 
   it('should be created', () => {
