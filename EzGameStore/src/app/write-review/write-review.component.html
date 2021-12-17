@@ -12,12 +12,14 @@
             </select>
         </div>
         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Enter your name" name="author" [(ngModel)]="review.author">
+            <input type="text" class="form-control" placeholder="Enter your name" name="author"
+                [(ngModel)]="review.author">
         </div>
         <div class="input-group">
             <span class="input-group-text">Write your review</span>
             <textarea class="form-control" name="body" [(ngModel)]="review.body"></textarea>
         </div>
-        <button (click)="handleSubmit($event,reviewFormGroup)" class="btn btn-dark" style="margin-top: 10px;">Submit</button>
+        <button (click)="handleSubmit($event,reviewFormGroup)" class="btn btn-dark"
+            style="margin-top: 10px;">Submit</button>
     </form>
 </div>

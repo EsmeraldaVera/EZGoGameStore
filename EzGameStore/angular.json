@@ -100,9 +100,9 @@
         }
     },
     "schematics": {
-      "@schemtatics/angular:component": {
-        "styleext": "scss"
-      }
+        "@schemtatics/angular:component": {
+            "styleext": "scss"
+        }
     },
     "defaultProject": "EzGameStore"
 }
