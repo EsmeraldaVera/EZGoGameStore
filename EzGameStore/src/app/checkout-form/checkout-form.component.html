@@ -1,8 +1,8 @@
-<div class="container">
+<div class="d-flex justify-content-center" id="checkout">
     <div class="col-md-8">
         <div class="card">
-            <div class="card-header">Checkout</div>
-            <div class="card-body">
+            <div class="card-header" id="card">Checkout</div>
+            <div class="card-body" id="card">
                 <form #creditCardFormGroup="ngForm" (submit)="handleSubmit($event,creditCardFormGroup)">
                     <div class="form-group">
                         <label>Name on Card:</label>
@@ -34,7 +34,7 @@
                         <input type="address" class="form-control" name="address" [(ngModel)]="creditCard.expiration">
                     </div>
 
-                    <button class="btn btn-primary">Checkout</button>
+                    <button class="btn btn-dark">Checkout</button>
                     <button type="button" (click)="doCancel()" class="btn btn-danger">Cancel</button>
                 </form>
             </div>
