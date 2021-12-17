@@ -1,40 +1,43 @@
-/*
-<div class="col-md-8">
-    <div class="card">
-        <div class="card-header">Checkout</div>
-        <div class="card-body">
-            <form #accountFormGroup="ngForm" (submit)="handleSubmit($event,accountFormGroup)">
-                <div class="form-group">
-                    <label>Name on Card:</label>
-                    <input class="form-control" name="name" [(ngModel)]="account.name" />
-                </div>
-                <div class=" form-group">
-                    <label>Card Type:</label>
-                    <select class="form-control" name="type" [(ngModel)]="account.type">
-            <option value="Visa">Visa</option>
-            <option value="MasterCard">MasterCard</option>
-          </select>
-                </div>
-                <div class="form-group">
-                    <label>Card Number: </label>
-                    <input type="number" class="form-control" name="account_number" [(ngModel)]="account.account_number" />
-                </div>
-                <div class="form-group">
-                    <label>Expiration Date:</label>
-                    <input type="date" class="form-control" name="expiration_date" [(ngModel)]="account.expiration">
-                </div>
-                <div class="form-group">
-                    <label>CVC:</label>
-                    <input type="number" class="form-control" name="cvc" [(ngModel)]="account.cvc">
-                </div>
-                <div class="form-group">
-                    <label>Billing Address:</label>
-                    <input type="address" class="form-control" name="address" [(ngModel)]="account.address">
-                </div>
+<div class="d-flex justify-content-center" id="checkout">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header" id="card">Checkout</div>
+            <div class="card-body" id="card">
+                <form #creditCardFormGroup="ngForm" (submit)="handleSubmit($event,creditCardFormGroup)">
+                    <div class="form-group">
+                        <label>Name on Card:</label>
+                        <input class="form-control" name="name" [(ngModel)]="creditCard.name" />
+                    </div>
+                    <div class=" form-group">
+                        <label>Card Type:</label>
+                        <select class="form-control" name="type" [(ngModel)]="creditCard.type">
+                            <option value="Visa">Visa</option>
+                            <option value="MasterCard">MasterCard</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Card Number: </label>
+                        <input type="number" class="form-control" name="card_number"
+                            [(ngModel)]="creditCard.card_number" />
+                    </div>
+                    <div class="form-group">
+                        <label>Expiration Date:</label>
+                        <input type="date" class="form-control" name="expiration_date"
+                            [(ngModel)]="creditCard.expiration">
+                    </div>
+                    <div class="form-group">
+                        <label>CVC:</label>
+                        <input type="number" class="form-control" name="cvc" [(ngModel)]="creditCard.cvc">
+                    </div>
+                    <div class="form-group">
+                        <label>Billing Address:</label>
+                        <input type="address" class="form-control" name="address" [(ngModel)]="creditCard.expiration">
+                    </div>
 
-                <button class="btn btn-primary">Checkout</button>
-                <button type="button" (click)="doCancel()" class="btn btn-danger">Cancel</button>
-            </form>
+                    <button class="btn btn-dark">Checkout</button>
+                    <button type="button" (click)="doCancel()" class="btn btn-danger">Cancel</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>
