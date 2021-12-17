@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
 import { AuthGuard } from './auth.guard';
 import { JwtInterceptor } from './jwt.interceptor';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import {ProductListComponent} from './product-list/product-list.component';
 import {ProductViewComponent} from './product-view/product-view.component';
@@ -17,13 +18,17 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { ProductFormComponent } from './product-form/product-form.component';
 import { CheckoutFormComponent } from './checkout-form/checkout-form.component';
+import { CartComponent } from './cart/cart.component';
+import { HomeComponent } from './home/home.component';
 const routes:Routes= [
+  {path: 'home', component: HomeComponent},
   {path: 'add-delete-product', component: ProductFormComponent
   },
-  {path: 'checkout', component: CheckoutFormComponent},
+  {path: 'cart-view', component: CartComponent},
   { path: '', pathMatch: "full", redirectTo: 'login' },
   {path: 'list', component:ProductListComponent},
   { path: 'login-form', component: LoginComponent },
+
   {
     path: 'list', resolve: {
       products: ProductsResolver
@@ -55,10 +60,12 @@ const routes:Routes= [
     NavbarComponent,
     HeaderComponent,
     ProductFormComponent,
-    CheckoutFormComponent
+    CheckoutFormComponent,
+    CartComponent,
   
   ],
   imports: [
+    NgbModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
