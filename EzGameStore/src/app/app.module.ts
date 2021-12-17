@@ -3,11 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
-<<<<<<< Updated upstream
-@NgModule({
-  declarations: [
-    AppComponent
-=======
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductViewComponent } from './product-view/product-view.component';
 import { LoginComponent } from './login/login.component';
@@ -15,7 +10,7 @@ import { ProductResolver } from './product.resolver';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
-import { HomeComponent } from './home/home.component';
+
 import { WriteReviewComponent } from './write-review/write-review.component';
 import { CartComponent } from './cart/cart.component';
 
@@ -35,7 +30,7 @@ const routes: Routes = [
     path: 'View-Products', component: ProductListComponent
   },
   {
-    path: 'Home', component: HomeComponent,
+    
   }
 ]
 @NgModule({
@@ -46,13 +41,12 @@ const routes: Routes = [
     ProductListComponent,
     NavbarComponent,
     HeaderComponent,
-    HomeComponent,
+  
     WriteReviewComponent,
     CartComponent
 
 
 
->>>>>>> Stashed changes
   ],
   imports: [
     BrowserModule
