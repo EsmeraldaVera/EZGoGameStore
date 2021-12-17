@@ -6,7 +6,10 @@
   <br>
 
 </p> -->
-![afullname](https://user-images.githubusercontent.com/81045242/146610747-fa152293-dc83-4303-b715-7868eefb9356.PNG)
+<!-- ![afullname](https://user-images.githubusercontent.com/81045242/146610747-fa152293-dc83-4303-b715-7868eefb9356.PNG) -->
+
+![actuallogo](https://user-images.githubusercontent.com/81045242/146613316-05e53d0d-9f88-408a-90ce-1918081bd8bc.PNG)
+
 
 ---
 
