@@ -8,11 +8,11 @@ import { Component, Input } from '@angular/core';
 export class ReviewComponent {
 
   @Input("value")
-  review: any = {}
+  reviews: any = {}
 
   starsArray: Array<number> = []
 
   ngOnChanges() {
-    this.starsArray = Array(this.review.stars).fill(0);
+    this.starsArray = Array(this.reviews.stars).fill(0);
   }
 }
