@@ -55,8 +55,10 @@
 
 ## 📸 **Screenshots**
 
-Nothing to see here atm, gimme a min
+Preview of web app
 
-### 🔺 Perhaps the login
+### 🔺 Login form. Logout button will not appear until a user is logged in.
+![LoginSS](https://user-images.githubusercontent.com/81045242/146657038-8d2b27dc-1ba7-4b36-b08d-9523a58ea55e.PNG)
+![logoutss](https://user-images.githubusercontent.com/81045242/146657039-d4fee4f8-909d-4d20-9b4f-d7c7f0d7dbc0.PNG)
 
 ### 🔻 And here will be a products view?
