@@ -8,16 +8,37 @@ import { CartService } from '../cart.service';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
+
+
   @Input("value") product: any;
-   products: Array<any> = []
+
+  reviews: Array<any> = []
+
+  currentTab: number = 1
+
+  products: Array<any> = []
   constructor(private productService: ProductService, private cartService: CartService) { }
 
-  ngOnInit(){
-  this.productService.getAllProducts().subscribe({
-  next: (response:any) => {
-  this.products=response}
-  });
+  handleTabChange(e: Event, tabIndex: number, productId: number) {
+    e.preventDefault();
+    this.currentTab = tabIndex;
+    if (this.currentTab === 2) {
+      this.productService.getReviews(productId)
+        .subscribe({
+          next: (response: any) => {
+            this.reviews = response;
+          }
+        })
+    }
   }
   handleBuy(event:Event){
   return this.cartService.addToCart(this.products)}
+
+  ngOnInit() {
+    this.productService.getAllProducts().subscribe({
+      next: (response: any) => {
+        this.products = response
+      }
+    });
   }
+}
